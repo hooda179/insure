@@ -1,0 +1,235 @@
+/* * {
+    box-sizing: border-box;
+} */
+body {
+    font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
+}
+header {
+    margin-bottom: 248px;
+}
+section {
+    padding: 0 150px;
+}
+.capital {
+    text-transform: capitalize;
+}
+.row {
+    margin: 0;
+}
+.row>* {
+    padding: 0;
+}
+/* navigation bar */
+nav {
+    padding: 0 150px;
+    height: 135px;
+    background-color: white;
+    z-index: 2;
+}
+.container-fluid {
+    padding: 0;
+}
+#nav-items {
+    justify-content: flex-end;
+}
+.nav-link {
+    font-size: 20px;
+    color: #707070;
+    margin-right: 50px;
+    padding: 0 !important;
+    align-self: center;
+}
+.nav-link:hover {
+    color: black;
+}
+.navbar-brand img {
+    width: 122px;
+}
+button.plans, button.plans-light {
+    width: 178px;
+    height: 47px;
+    font-size: 20px;
+    align-self: center;
+}
+/* title section */
+div.title {
+    height: 533px;
+    background-color: #2D2640;
+    padding-top: 65px;
+    position: relative;
+}
+hr.half {
+    width: 156px;
+    border: 0.5px solid #B4B4B4;
+}
+.image {
+    padding: 0 150px;
+}
+.heading {
+    font-family: 'DM Serif Display', serif;
+    font-size: 70px;
+    color: white;
+}
+.title p {
+    color: #A2A2A2;
+    font-size: 16px;
+    margin-top: 24px;
+}
+button.plans-light {
+    background-color: #2D2640;
+    color: white;
+    border-color: white;
+}
+button.plans-light:hover {
+    color: black;
+    background-color: white;
+}
+.title .pattern-right {
+    position: absolute;
+    right: -10%;
+    top: -25%;
+    width: 697px;
+    height: 649px;
+    z-index: 1;
+    opacity: 0.3;
+}
+.pattern-left {
+    position: absolute;
+    left: -38px;
+    top: 500px;
+    opacity: 0.3;
+}
+/* features section */
+section.features .heading {
+    color: black;
+    margin-top: 50px;
+}
+section.features .feature-card {
+    margin-top: 90px;
+    margin-bottom: 135px;
+}
+section.features h3.heading {
+    font-size: 30px;
+    margin: 32px 0;
+}
+section.features .icon {
+    width: 86px;
+}
+section.features p {
+    font-size: 16px;
+    color: #A2A2A2;
+}
+/* call to action section */
+section.call-to-action {
+    height: 283px;
+    margin: 0 150px 200px;
+    background-color: #2D2640;
+}
+section.call-to-action .row {
+    height: 100%;
+    align-items: center;
+}
+/* footer */
+footer {
+    padding: 70px 150px;
+    background-color: rgba(187, 187, 187, 0.11);
+}
+footer .logo img {
+    width: 111.22px;
+}
+footer .social .social-icons img {
+    width: 24px;
+}
+footer hr {
+    background-color: #707070;
+    opacity: 1;
+    margin: 40px 0 64px 0;
+}
+footer p.title {
+    font-size: 20px;
+    color: #A2A2A2;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/* mobile styles */
+@media screen and (max-width: 992px)  {
+    body {
+        overflow-x: hidden;
+        text-align: center;
+    }
+    section.call-to-action, div.title, .image , section,footer , header {
+        padding: 0;
+        margin: 0;
+    }
+    .image .pattern-right , .pattern-left {
+        display: none;
+    }
+    .heading {
+        font-size: 45px;
+    }
+    nav {
+        padding: 30px;
+    }
+    div.title {
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .title .heading {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .title hr {
+        display: none;
+    }
+    .title img {
+        width: 100%;
+    }
+    .title .intro-image {
+        order: 1;
+    }
+    .title .content {
+        order: 2;
+        padding: 0 20px;
+    }
+    .title .content p {
+        font-size: 16px;
+    }
+    .title .content button {
+        margin-top: 40px;
+    }
+    section.features .row {
+        margin: 50px 0;
+    }
+    section.features .feature-card {
+        margin: 30px 0;
+    }
+    section.call-to-action {
+        padding: 200px 0;
+        margin-bottom: 200px;
+    }
+    section.call-to-action .row {
+        align-content: center;
+    }
+    section.call-to-action button {
+        margin-top: 50px;
+    }
+    footer .logo {
+        margin: 30px 0;
+    }
+    footer .social > .row {
+        width: 200px;
+        margin: auto;
+    }
+
+}
